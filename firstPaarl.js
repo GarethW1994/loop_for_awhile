@@ -1,4 +1,3 @@
-
 function firstPaarl(regNum) {
     var regNumsplit = regNum.split(',');
 
@@ -6,21 +5,21 @@ function firstPaarl(regNum) {
 
     var paarlList = [];
 
-//for - loop to loop through the split strings
-    for (var i = 0; i < regNumsplit.length; i++)   {
-//push them to new list empty array
-      newList.push(regNumsplit[i]);
+    //for - loop to loop through the split strings
+    for (var i = 0; i < regNumsplit.length; i++) {
+        //push them to new list empty array
+        newList.push(regNumsplit[i]);
 
-//Check if the array contains strings that starts with 'CJ'
-      if (newList[i].includes('CJ')) {
-        //Push the strings from paarl to new array
-        paarlList.push(newList[i])
-      }
+        //Check if the array contains strings that starts with 'CJ'
+        if (newList[i].includes('CJ')) {
+            //Push the strings from paarl to new array
+            paarlList.push(newList[i])
+        }
     }
 
-//Remove brackets in array
+    //Remove brackets in array
     var list = paarlList.join('[]');
-//Return array as string
+    //Return array as string
     return list;
 }
 

@@ -14,29 +14,26 @@ var enoughAirtime = function(usage, airtime) {
 
 
     for (var i = 0; i < splitUsage.length; i++) {
-      usageList.push(splitUsage[i]);
+        usageList.push(splitUsage[i]);
 
-      if (usageList[i].includes('sms')) {
-        sms.push(usageList['sms']);
-      }
-      else if (usageList[i].includes('call')) {
-        call.push(usageList['call']);
-      }
-      else if (usageList[i].includes('data')) {
-        data.push(usageList['data']);
-      }
+        if (usageList[i].includes('sms')) {
+            sms.push(usageList['sms']);
+        } else if (usageList[i].includes('call')) {
+            call.push(usageList['call']);
+        } else if (usageList[i].includes('data')) {
+            data.push(usageList['data']);
+        }
     }
 
     var totalPhoneBill = (call.length * costPerCall) + (sms.length * costSms) + (data.length * dataBundles);
 
     if (totalPhoneBill > airtime) {
-      return 'Not enough Airtime';
-    }
-    else {
-    total = airtime - totalPhoneBill;
+        return 'Not enough Airtime';
+    } else {
+        total = airtime - totalPhoneBill;
 
-    return 'R' + total.toFixed(2);
-  }
+        return 'R' + total.toFixed(2);
+    }
 }
 
 const assert = require('assert');

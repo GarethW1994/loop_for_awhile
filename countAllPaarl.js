@@ -5,20 +5,20 @@ var countAllPaarl = function(regNum) {
 
     var paarlList = [];
 
-    for (var i = 0; i < regNumsplit.length; i++)   {
+    for (var i = 0; i < regNumsplit.length; i++) {
 
         newList.push(regNumsplit[i]);
 
         if (regNumsplit[i].startsWith('CJ')) {
 
-          paarlList.push(newList[i]);
+            paarlList.push(newList[i]);
         }
 
     }
 
 
 
-   return paarlList.length;
+    return paarlList.length;
 }
 
 const assert = require('assert');

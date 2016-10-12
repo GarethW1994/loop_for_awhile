@@ -1,24 +1,24 @@
 var allPaarl = function(regNum) {
-    var regNumsplit = regNum.split(',');
+        var regNumsplit = regNum.split(',');
 
-    var newList = [];
+        var newList = [];
 
-    var paarlList = [];
+        var paarlList = [];
 
-    for (var k = 0; k < regNumsplit.length; k++) {
-      newList.push(regNumsplit[k]);
+        for (var k = 0; k < regNumsplit.length; k++) {
+            newList.push(regNumsplit[k]);
 
-        if (newList[k].startsWith('CJ')) {
-            paarlList.push(newList[k]);
+            if (newList[k].startsWith('CJ')) {
+                paarlList.push(newList[k]);
+            }
         }
-  }
 
-//Add comma between data
-    var allPaarl = paarlList.join(' , ');
+        //Add comma between data
+        var allPaarl = paarlList.join(' , ');
 
-   return allPaarl;
-}
-//test function
+        return allPaarl;
+    }
+    //test function
 const assert = require('assert');
 
 

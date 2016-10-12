@@ -5,11 +5,11 @@ var regNumberList = [
 ];
 
 function displayEachRegNumber() {
-    
+
     for (var x = 0; x < regNumberList.length; x++) {
         console.log(regNumberList[x]);
     }
-    
+
 }
 
 displayEachRegNumber(regNumberList);

@@ -7,14 +7,14 @@ var shoppingList = function(myList) {
     var viewList = myList.split(',');
     var newList = [];
 
-   for (var i = 0; i < viewList.length; i++) {
-      console.log(viewList[i]);
+    for (var i = 0; i < viewList.length; i++) {
+        console.log(viewList[i]);
     }
 
-  /*  while(i < viewList.length) {
-      i++;
-      console.log(viewList[i]);
-    }*/
+    /*  while(i < viewList.length) {
+        i++;
+        console.log(viewList[i]);
+      }*/
 
 };
 //console.log(shoppingListName);
