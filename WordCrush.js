@@ -73,9 +73,8 @@ var testLongestWord = (longest_Word('I am a ninja'));
 //var testShortestWord = (shortest_Word('I am a monster'));
 var sumOfWords = (get_WordsLength('The red door'));
 
-deepEqual = (testLongestWord, 'ninja');
-//deepEqual = (testShortestWord, 'a');
-deepEqual = (sumOfWords, 10);
+assert.equal(testLongestWord, 'ninja');
+assert.equal(sumOfWords, 10);
 
 //log longest word
 console.log(longest_Word('I am coding with loops'));

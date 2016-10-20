@@ -27,6 +27,6 @@ const assert = require('assert');
 
 var test = totalPhoneBill('call,sms,call,sms,sms');
 
-assert.deepEqual(test, 'R' + 7.45)
+assert.equal(test, 'R' + 7.45)
 
 console.log(totalPhoneBill('call,sms,call,sms,sms'));

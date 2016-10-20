@@ -40,6 +40,6 @@ const assert = require('assert');
 
 var processAirtime = (enoughAirtime('call,call,call,data,sms,sms,call,data', 50));
 
-assert.deepEqual(processAirtime, 'R' + 16.98);
+assert.equal(processAirtime, 'R' + 16.98);
 
 console.log(enoughAirtime('call,call,call,data,sms,sms,call,data', 50))

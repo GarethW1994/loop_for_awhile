@@ -25,11 +25,11 @@ const assert = require('assert');
 var fromStellies = allFromTown('CL 124,CY 567,CL 345,CJ 456,CL 341', 'CL');
 
 
-assert.deepEqual(fromStellies, 'CL 124,CL 345,CL 341');
+assert.equal(fromStellies, 'CL 124,CL 345,CL 341');
 
 var fromKuilsriver = allFromTown('CL 124,CY 567,CL 345,CJ 456,CL 341', 'CF');
 
-assert.deepEqual(fromKuilsriver, '');
+assert.equal(fromKuilsriver, '');
 
 
 console.log(allFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341', 'CL'));
